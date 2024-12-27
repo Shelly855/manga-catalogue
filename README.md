@@ -1,5 +1,5 @@
 # C# Manga Catalogue
-*Completed on 6/12/24*
+**Project Duration:** Oct 10th - Dec 6th 2024
 
 A C# console application developed as part of university coursework, built in Visual Studio 2022.
 
