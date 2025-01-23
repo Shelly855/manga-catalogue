@@ -45,7 +45,7 @@ namespace Catalogue
         }
 
         // Show number of processors on computer
-        /* After incorporating the Using Multiple Processors topic, users can now select a choice from
+        /* UPDATE HISTORY: After incorporating the Using Multiple Processors topic, users can now select a choice from
          * the main menu to view the number of processors on their computer. */
         static void ShowProcessorCount(MangaStorage mangaStorage)
         {
@@ -557,8 +557,8 @@ Please pick a type using its number:
             string filePath = "mangaData.dat";
 
             /* UPDATE HISTORY: Before, try catch was not used.
-             * After incorporating the Robustness topic, this method now handles potential errors & provide
-             * provide error messages to improve robustness. */
+             * After incorporating the Robustness topic, this method now handles potential errors &
+             * provides error messages to improve robustness. */
             try
             {
                 PrintSectionTitle("Add a New Manga");
@@ -792,7 +792,7 @@ Please pick a type using its number:
             return removeMangaChoice == "yes";
         }
 
-        /* Before, LINQ's Any() was used to check for manga existence.
+        /* UPDATE HISTORY: Before, LINQ's Any() was used to check for manga existence.
          * After incorporating the Profiling & Performance topic, LINQ's Any() was replaced with a manual loop.
          * Performance improvements are more noticeable with larger datasets, as LINQ's overhead is avoided. */
         static void UpdateManga(MangaStorage mangaStorage)
@@ -1041,7 +1041,7 @@ Please pick a choice using its number:
             }
         }
 
-        /* Before, caching was not used in the SearchByTitle method.
+        /* UPDATE HISTORY: Before, caching was not used in the SearchByTitle method.
          * After applying the Profiling & Performance topic, a cache was incorporated to store previous
          * search results, potentially improving performance by avoiding redundant searches for the same title. 
          * Caching will be more effective as the dataset grows in size or when there are repetitive searches. */
